@@ -1,0 +1,155 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+a {
+    color: #ff7f50; /* Highlight color for links */
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+/* Menu Section */
+.menu {
+    background-image: url('images/menu-bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333; /* Dark background for contrast */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    margin: 10px 0;
+}
+
+.contact-content a {
+    color: #ff7f50; /* Highlight color for links */
+    text-decoration: none;
+}
+
+.contact-content .social-icons {
+    margin-top: 20px;
+}
+
+.contact-content .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.contact-content .social-icons a:hover {
+    color: #ff7f50; /* Highlight color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Parallax Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Experience the best dining in town</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Our restaurant offers a unique dining experience with a fusion of flavors from around the world.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="item">
+                <h3>Truffle Parmesan Fries</h3>
+                <p>$12</p>
+                <p>Crispy fries tossed in truffle oil, grated Parmesan, and fresh herbs, served with a garlic aioli dip.</p>
+            </div>
+            <div class="item">
+                <h3>Avocado Bruschetta</h3>
+                <p>$10</p>
+                <p>Grilled sourdough topped with smashed avocado, cherry tomatoes, balsamic glaze, and microgreens.</p>
+            </div>
+            <div class="item">
+                <h3>Firecracker Shrimp</h3>
+                <p>$14</p>
+                <p>Spicy, crispy shrimp drizzled with a sweet chili sauce, served with a side of lime crema.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="images/image1.jpeg" alt="Dish 1">
+            <img src="images/image2.jpeg" alt="Dish 2">
+            <img src="images/image3.png" alt="Dish 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@restaurant.com">info@restaurant.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Enhanced Parallax -->
+    <script>
+        document.addEventListener('scroll', function() {
+            const scrolled = window.scrollY;
+            document.querySelector('.hero').style.backgroundPositionY = scrolled * 0.5 + 'px';
+            document.querySelector('.menu').style.backgroundPositionY = scrolled * 0.3 + 'px';
+            document.querySelector('.contact').style.backgroundPositionY = scrolled * 0.4 + 'px';
+        });
+    </script>
+</body>
+</html>
